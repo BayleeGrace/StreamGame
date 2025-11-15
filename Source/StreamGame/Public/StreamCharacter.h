@@ -10,6 +10,10 @@ UCLASS()
 class STREAMGAME_API AStreamCharacter : public ACharacter
 {
 	GENERATED_BODY()
+	
+	// Allows for a Static mesh Component to be placed on this actor class
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* visualMesh; // pointer to store an object (static mesh) to reference its place in memory
 
 public:
 	// Sets default values for this character's properties
